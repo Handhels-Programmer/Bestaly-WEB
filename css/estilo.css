@@ -196,3 +196,29 @@ html, body {
     display: flex; /* Usar flexbox */
     flex-direction: column; /* Disposición en columna */
 }
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /* Oculta cualquier contenido que exceda el área del slider */
+    border: none; /* Asegúrate de que no haya bordes en el slider */
+    padding: 0; /* Sin padding en el slider */
+}
+
+.slider-container {
+    display: flex; /* Muestra los slides en fila */
+    transition: transform 0.5s ease; /* Suaviza la transición entre slides */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho del slider */
+    box-shadow: none; /* Sin sombra en los slides */
+    border: none; /* Sin borde en los slides */
+}
+
+.slide img {
+    width: 100%; /* La imagen ocupa el 100% del slide */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio en la parte inferior de la imagen */
+    border: none; /* Asegúrate de que no haya bordes en la imagen */
+}
