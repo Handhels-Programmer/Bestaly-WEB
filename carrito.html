@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Bestly</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/funciones.js" defer></script>
+</head>
+<body>
+    <?php include '../partials/navbar.html'; ?>
+
+    <section class="carrito">
+        <h1>Carrito de Compras</h1>
+        <ul id="carritoItems">
+            <!-- Los productos añadidos al carrito aparecerán aquí -->
+        </ul>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bestly</p>
+    </footer>
+</body>
+</html>
